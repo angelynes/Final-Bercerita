@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Donate to Bercerita</title>
+
+    <link rel="stylesheet" href="/styles/donate.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Header Image and Title -->
+    <header>
+      <!-- Navbar -->
+      <nav
+        class="flex flex-row items-center justify-center bg-[#f2f2f2] text-black w-[90%] py-[12px] rounded-full"
+      >
+        <img src="/assets/logo-nobg.png" class="w-[10%] ml-10" />
+
+        <a href="/">Home</a>
+        <a href="/about">About us</a>
+        <a href="/volunteer">Volunteers</a>
+        <a href="#">Donate</a>
+      </nav>
+
+      <div class="my-14 max-w-2xl mx-auto space-y-4">
+        <h1 class="text-6xl">Donate</h1>
+        <p class="">
+          Not a single one of us here today has done it alone. We are each a
+          patchwork quilt of those who have loved us, those who have believed in
+          our futures, those who showed us empathy and kindness or told us the
+          truth even when it wasn't easy to hear.
+        </p>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto space-y-4">
+      <p class="prose max-w-none">
+        We are proudly non-profit, non-corporate, and non-compromised. People
+        like you help elementary schools in rural parts of the world to provide
+        facilities, equipment, and technology.
+        <strong>Will you give today?</strong>
+      </p>
+
+      <form class="w-full max-w-xs mx-auto space-y-4">
+        <div>
+          <label for="name" class="block text-sm font-medium text-gray-700">
+            Name
+          </label>
+          <div class="mt-1">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+              placeholder="John Doe"
+            />
+          </div>
+        </div>
+
+        <div>
+          <label for="amount" class="block text-sm font-medium text-gray-700">
+            Amount
+          </label>
+          <div class="mt-1 relative rounded-md shadow-sm">
+            <div
+              class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+            >
+              <span class="text-gray-500 sm:text-sm"> $ </span>
+            </div>
+            <input
+              type="text"
+              name="amount"
+              id="amount"
+              class="focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-7 pr-12 sm:text-sm border-gray-300 rounded-md"
+              placeholder="0.00"
+              aria-describedby="amount-currency"
+            />
+            <div
+              class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none"
+            >
+              <span class="text-gray-500 sm:text-sm" id="amount-currency">
+                USD
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-between">
+            <label
+              for="comment"
+              class="block text-sm font-medium text-gray-700"
+            >
+              Comment
+            </label>
+            <span class="text-xs text-gray-500 uppercase tracking-wide">
+              Optional
+            </span>
+          </div>
+          <div class="mt-1">
+            <input
+              type="text"
+              name="comment"
+              id="comment"
+              class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+            />
+          </div>
+        </div>
+
+        <button
+          type="button"
+          class="w-full py-2 px-4 bg-yellow-300 rounded-md transition-colors duration-150 hover:bg-yellow-400"
+        >
+          Next
+        </button>
+      </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-24 bg-[#c5c6c7] w-full">
+      <div class="flex flex-row m-5">
+        <div class="logo-col">
+          <img src="/assets/logo-nobg.png" />
+        </div>
+
+        <div class="contactus-col">
+          <a href="#" class="flex flex-row items-center">
+            <span class="fa fa-instagram"></span>
+            <span class="">bercerita.org</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
