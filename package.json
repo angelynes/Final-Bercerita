@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "dev:tailwind": "tailwindcss -i ./styles/donate.tailwind.css -o ./styles/donate.css --minify",
+    "dev:tailwind:watch": "tailwindcss -i ./styles/donate.tailwind.css -o ./styles/donate.css --minify --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.6",
+    "@tailwindcss/typography": "^0.5.10",
+    "tailwindcss": "^3.3.5"
+  }
+}
