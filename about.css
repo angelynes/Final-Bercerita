@@ -1,0 +1,239 @@
+/*Import Google Fonts*/ 
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source&display=swap');
+
+/*Body*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background: white;
+    width: 100%;
+    font: #2d2d2d;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Header*/
+.header { /*Header Background*/
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 40px;
+    background-image: url("about-us.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f2f2f2;
+    text-align: center;
+}
+.navbar { /*Navbar*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: E4E4CC;
+    color: black;
+    width: 90%;
+    padding: 12px 0;
+    background: #f2f2f2;
+    border-radius: 50px;
+}
+.navbar img { /*Navbar Image*/
+    width: 10%;
+    margin-left: 40px;
+}
+.navbar a { /*Navbar Text*/
+    font-family: 'Lato', sans-serif;
+    color: black;
+    margin-right: 90px;
+    margin-left: 90px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+.navbar a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.navbar a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left; 
+}
+.navbar a:active {
+    font-weight: bold;
+    font-size: 20px;
+}
+.header #header-title { /*Header Text*/
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+.header #header-description { /*Header Description*/
+    line-height: 25px;
+    color: #f2f2f2;
+    padding: 0 450px;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+/*Header Button*/
+button {
+    padding: 10px 40px;
+    font-size: 16px;
+    border: none;
+    font-family: 'Lato', sans-serif;
+    border-radius:6px;
+    background-color: #d5dbdb;
+    color: #2D2D2D;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #333;
+    color: #f2f2f2;
+}
+
+/*Main Section*/
+.main-section {
+    width: 100%;
+    height: 115vh;
+}
+
+/*Main Section - Top Content*/
+.top-content { /*Top Content*/
+    width: 100%;
+    height: 55vh;
+}
+.main-sentence { /*Main Sentence*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+.main-sentence h2 { /*The Sentence*/
+    border: none;
+    font-family: 'Lato', sans-serif;
+    color: #2d2d2d;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.who-are-we { /*Who Are We Section*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.who-are-we p {
+    padding: 0 350px;
+    line-height: 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+/*Main Section - Bottom Content*/
+.bottom-content { 
+    display: flex;
+    height: 30vh;
+    
+}
+.vision {
+    width: 50%;
+    height: auto;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 25px;
+    line-height: 25px;
+}
+.mission {
+    width: 50%;
+    height: auto;
+    padding-right: 50px;
+    padding-left: 25px;
+    line-height: 25px;
+    text-align: center;
+}
+
+/*Main Section - Teaching Program*/
+.teaching-programs {
+    width: 100%; 
+    height: 25vh; 
+    text-align: center;
+}
+
+/*Footer*/
+footer {
+    background-color: #c5c6c7;
+    width: 100%;
+    height: 18vh;
+}
+footer .container {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.logo-col {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    padding-top: 15px;
+    padding-right: 40px;
+    border-right: 1px solid grey;
+}
+.contactus-col {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top: 5px;
+    width: 85%;
+}
+.contactus-col h3 {
+    margin: 0;
+}
+.instagram {
+    display: flex;
+    flex-direction: row;
+}
+.fa-instagram {
+    border-radius: 50%;
+    background: #125688;
+    color: white;
+    padding: 5px;
+    margin-top: 15px;
+    margin-right: 5px;
+    font-size: 20px;
+    width: 20px;
+    height:20px;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+#instagram-text {
+    font-size: 16px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #2d2d2d;
+}
+
+#instagram-text:hover {
+    font: bold;
+    text-decoration: underline;
+}
