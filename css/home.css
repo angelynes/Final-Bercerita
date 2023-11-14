@@ -1,0 +1,196 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source&display=swap');
+
+/* Body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background: white;
+    width: 100%;
+    color: #2d2d2d;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* New wrapper class */
+.content-wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.header {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 40px;
+    background-image: url("home-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f2f2f2;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #E4E4CC;
+    color: black;
+    width: 90%;
+    padding: 12px 0;
+    background: #f2f2f2;
+    border-radius: 50px;
+}
+
+.navbar img {
+    width: 10%;
+    margin-left: 40px;
+}
+
+.navbar a {
+    font-family: 'Lato', sans-serif;
+    color: black;
+    margin-right: 90px;
+    margin-left: 90px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.navbar a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navbar a:active {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.header #header-title {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+
+.header #header-description {
+    line-height: 25px;
+    color: #f2f2f2;
+    padding: 0 450px;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+/* Header Button */
+button {
+    padding: 10px 40px;
+    font-size: 16px;
+    border: none;
+    font-family: 'Lato', sans-serif;
+    border-radius: 6px;
+    background-color: #d5dbdb;
+    color: #2D2D2D;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #333;
+    color: #f2f2f2;
+}
+
+/* Main Section */
+.main-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.main-section .main-sentence {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 20px;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #c5c6c7;
+    width: 100%;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-col, .contactus-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-col img {
+    width: 50px;
+}
+
+.contactus-col h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.instagram {
+    display: flex;
+    align-items: center;
+}
+
+.fa {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+#instagram-text {
+    font-size: 16px;
+    color: #2d2d2d;
+    text-decoration: none;
+}
